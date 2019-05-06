@@ -1,0 +1,22 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+ 
+
+```{r}
+setwd("C:/Users/mohin/Downloads")
+```
+
+```{r}
+library(xlsx)
+library(esquisse)
+library(ggplot2)
+library(tidyverse)
+df = read.xlsx("AHUData_Weekday_9Cluster_Anomaly_Final.xlsx", sheetName = "Anomalies")
+```
+
+```{r}
+esquisse::esquisser(df)
+```
+
